@@ -14,8 +14,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-
-
   <title>Pricing component</title>
 </head>
 
@@ -23,66 +21,66 @@
   <div class="mainContainer">
     <div class="annualContainer">
       <div class="headingContainer">
-        <h1>Our Pricing</h1>
+        <h1 class="mainHeading">Our Pricing</h1>
         <div>
-          <span>Annually</span>
-          <label class="switch">
-            <span class="slider round"> <input type="checkbox" /></span>
-          </label>
-          <span>Monthly</span>
+          <div class="planSelector">
+            <span>Annually</span>
+            <!--This label is for toggel button-->
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+            <span>Monthly</span>
+          </div>
         </div>
       </div>
       <div class="pricingMainContainer">
-        <div class="pricingSubContainer">
+        <ul class="pricingSubContainerBasic">
+          <li>
+            <h2 class="planType">Basic</h2>
+          </li>
+          <li class="planPrice">$199.99</li>
+          <hr />
+          <li class="storageDetails">500 GB Storage</li>
+          <hr />
+          <li class="userDetails">2 Users Allowed
+          <li>
+            <hr />
+          <li class="sharingDetails">Send up to 3 GB</li>
+          <hr />
+          <li><button>Learn More</button></li>
+        </ul>
+        <div class="pricingSubContainerProfessional">
           <ul>
             <li>
-              <h3 class="planType">Basic</h3>
+              <h2 class="planType2">Professional</h2>
             </li>
-            <li class="planPrice">$199.99</li>
+            <li class="planPrice2">$249.99</li>
             <hr />
-            <li class="storageDetails">500 GB Storage</li>
+            <li class="storageDetails2">1 TB Storage</li>
             <hr />
-            <li class="userDetails">2 Users Allowed</p>
-              <hr />
-            <li class="sharingDetails">Send up to 3 GB</li>
-            <hr />
-            <button>Learn More</button>
-          </ul>
-        </div>
-        <div class="pricingSubContainer">
-          <ul>
+            <li class="userDetails2">5 Users Allowed
             <li>
-              <h3 class="planType">Professional</h3>
-            </li>
-            <li class="planPrice">$249.99</li>
-            <hr />
-            <li class="storageDetails">1 TB Storage</li>
-            <hr />
-            <li class="userDetails">5 Users Allowed</p>
               <hr />
-            <li class="sharingDetails">Send up to 10 GB</li>
+            <li class="sharingDetails2">Send up to 10 GB</li>
             <hr />
-            <button>Learn More</button>
+            <li><button class="button2">Learn More</button></li>
           </ul>
         </div>
-        <div class="pricingSubContainer">
-          <div class="pricingSubContainer">
-            <ul>
-              <li>
-                <h3 class="planType">Master</h3>
-              </li>
-              <li class="planPrice">$399.99</li>
-              <hr />
-              <li class="storageDetails">2 TB Storage</li>
-              <hr />
-              <li class="userDetails">10 Users Allowed</p>
-                <hr />
-              <li class="sharingDetails">Send up to 20 GB</li>
-              <hr />
-              <button>Learn More</button>
-            </ul>
-          </div>
-        </div>
+        <ul class="pricingSubContainerMaster">
+          <li>
+            <h2 class="planType">Master</h2>
+          </li>
+          <li class="planPrice">$399.99</li>
+          <hr />
+          <li class="storageDetails">2 TB Storage</li>
+          <hr />
+          <li class="userDetails">10 Users Allowed</li>
+          <hr />
+          <li class="sharingDetails">Send up to 20 GB</li>
+          <hr />
+          <li><button class="learnMoreBtn">Learn More</button></li>
+        </ul>
       </div>
     </div>
   </div>
