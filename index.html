@@ -8,7 +8,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
-
+  <script defer src="index.js"></script>
   <link rel="stylesheet" href="reset.css" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +27,7 @@
             <span>Annually</span>
             <!--This label is for toggel button-->
             <label class="switch">
-              <input type="checkbox" />
+              <input type="checkbox" id="planToggler" />
               <span class="slider round"></span>
             </label>
             <span>Monthly</span>
@@ -35,11 +35,11 @@
         </div>
       </div>
       <div class="pricingMainContainer">
-        <ul class="pricingSubContainerBasic">
+        <ul class="pricingSubContainer">
           <li>
             <h2 class="planType">Basic</h2>
           </li>
-          <li class="planPrice">$199.99</li>
+          <li class="planPrice" id="basicPlanPrice"><span class="dollarSymbol">$</span> 199.99</li>
           <hr />
           <li class="storageDetails">500 GB Storage</li>
           <hr />
@@ -50,39 +50,39 @@
           <hr />
           <li><button>Learn More</button></li>
         </ul>
-        <div class="pricingSubContainerProfessional">
-          <ul>
-            <li>
-              <h2 class="planType2">Professional</h2>
-            </li>
-            <li class="planPrice2">$249.99</li>
+        <ul class="pricingSubContainer">
+          <li>
+            <h2 class="planType">Professional</h2>
+          </li>
+          <li class="planPrice" id="professionalPlanPrice"><span class="dollarSymbol">$ </span> 249.99</li>
+          <hr />
+          <li class="storageDetails">1 TB Storage</li>
+          <hr />
+          <li class="userDetails">5 Users Allowed
+          <li>
             <hr />
-            <li class="storageDetails2">1 TB Storage</li>
-            <hr />
-            <li class="userDetails2">5 Users Allowed
-            <li>
-              <hr />
-            <li class="sharingDetails2">Send up to 10 GB</li>
-            <hr />
-            <li><button class="button2">Learn More</button></li>
-          </ul>
-        </div>
-        <ul class="pricingSubContainerMaster">
+          <li class="sharingDetails">Send up to 10 GB</li>
+          <hr />
+          <li><button class="button">Learn More</button></li>
+        </ul>
+        <ul class="pricingSubContainer">
           <li>
             <h2 class="planType">Master</h2>
           </li>
-          <li class="planPrice">$399.99</li>
+          <li class="planPrice" id="masterPlanPrice"><span class="dollarSymbol">$</span> 399.99</li>
           <hr />
           <li class="storageDetails">2 TB Storage</li>
           <hr />
-          <li class="userDetails">10 Users Allowed</li>
-          <hr />
+          <li class="userDetails">10 Users Allowed
+          <li>
+            <hr />
           <li class="sharingDetails">Send up to 20 GB</li>
           <hr />
-          <li><button class="learnMoreBtn">Learn More</button></li>
+          <li><button class="button">Learn More</button></li>
         </ul>
       </div>
     </div>
+  </div>
   </div>
 </body>
 

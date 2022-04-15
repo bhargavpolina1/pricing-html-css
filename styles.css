@@ -29,7 +29,7 @@
   align-items: center;
 }
 .mainHeading {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: 40px;
   color: var(--Grayish-Blue);
 }
@@ -110,14 +110,13 @@ input:checked + .slider:before {
   margin: 30px;
 }
 
-.pricingSubContainerBasic {
+.pricingSubContainer {
   background-color: white;
-  padding: 20px;
   width: 300px;
   height: 400px;
-  margin-top: 25px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  padding: 45px;
+  border-radius: 20px;
+  margin: 5px;
 }
 
 li {
@@ -139,16 +138,25 @@ hr {
 }
 
 .planPrice {
-  font-family: "Montserrat";
-  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
   font-weight: bold;
   color: var(--Dark-Grayish-Blue);
   margin-bottom: 5px;
   padding: 10px;
 }
+.dollarSymbol {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--Dark-Grayish-Blue);
+  padding-top: 15px;
+}
 
 .storageDetails {
-  font-family: "sans-serif";
+  font-family: "Montserrat", sans-serif;
   font-size: 15px;
   font-weight: 700;
   color: var(--Dark-Grayish-Blue);
@@ -178,43 +186,47 @@ button {
   height: 50px;
   width: 300px;
   border-radius: 10px;
+  font-weight: 700;
   color: var(--Very-Light-Grayish-Blue);
   background-image: linear-gradient(var(--linear-gradient));
 }
 
-.pricingSubContainerProfessional {
+.pricingSubContainer:hover {
+  cursor: pointer;
   background-image: linear-gradient(to bottom, var(--linear-gradient));
-  width: 400px;
+  width: 300px;
   height: 400px;
-  padding: 45px;
-  padding-left: 0px;
+  padding-top: 45px;
   border-radius: 20px;
 }
-
-.planType2 {
+.pricingSubContainer:hover .planType {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-weight: 700;
   color: white;
 }
 
-.planPrice2 {
-  font-family: "Montserrat";
-  font-size: 30px;
+.pricingSubContainer:hover .planPrice {
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
   font-weight: bold;
   color: white;
   margin-bottom: 5px;
   padding: 10px;
 }
+.pricingSubContainer:hover hr {
+  background-color: var(--Very-Light-Grayish-Blue);
+  opacity: 50%;
+}
 
-.storageDetails2 {
-  font-family: "sans-serif";
+.pricingSubContainer:hover .storageDetails {
+  font-family: "Montserrat", sans-serif;
   font-size: 15px;
   font-weight: 700;
   color: white;
   padding: 10px;
 }
-.userDetails2 {
+.pricingSubContainer:hover .userDetails {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   font-weight: 700;
@@ -222,7 +234,7 @@ button {
   padding: 10px;
 }
 
-.sharingDetails2 {
+.pricingSubContainer:hover .sharingDetails {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   font-weight: 700;
@@ -230,25 +242,30 @@ button {
   padding: 10px;
 }
 
-.button2 {
+.pricingSubContainer:hover button {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
-  padding: 10px;
+  padding: 5px;
   font-weight: 700;
-  height: 50px;
-  width: 300px;
+  height: 40px;
+  width: 200px;
   border-radius: 10px;
   margin-top: 15px;
   color: var(--button-color);
   background-image: linear-gradient(var(--Very-Light-Grayish-Blue));
 }
 
-.pricingSubContainerMaster {
-  background-color: white;
-  padding: 20px;
-  width: 300px;
-  height: 400px;
-  margin-top: 25px;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+.pricingSubContainer:hover li {
+  list-style-type: none;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pricingSubContainer:hover .dollarSymbol {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--Dark-Grayish-Blue);
+  padding-top: 15px;
+  color: white;
 }
