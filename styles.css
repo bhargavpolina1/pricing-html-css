@@ -1,0 +1,13 @@
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.annualContainer{
+    background-image: url("/pricing-html-css/images/bg-top.svg"), url("/pricing-html-css/images/bg-bottom.svg");
+    background-position: right top, left bottom;
+    background-repeat: no-repeat, no-repeat;
+}
